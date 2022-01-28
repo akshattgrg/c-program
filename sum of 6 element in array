@@ -1,0 +1,16 @@
+#include<string.h> 
+void main()
+{
+
+int arr[]={1,2,3,4,5,6};
+int *p = arr, i, s=0;
+printf ("enters 6 element : ");
+for(i=0; i<6; i++)
+{
+scanf("%d", (p+1));
+s+=*(p+1);
+}
+
+printf("sum of element is : %d", s);
+getch();
+}
