@@ -1,0 +1,23 @@
+#include <stdio.h>
+enum planet{
+    mercury=1,
+    venus,
+    earth,
+    mars,
+    jupiter,
+    saturn,
+    nuptune,
+    uranus,
+};
+int main()
+{
+    int a;
+    printf("enter planet: ");
+    scanf("%d",&a);
+    if(a==mercury|| a==venus|| a==earth || a==mars)
+    printf("near the earth");
+    if(a==jupiter || a==saturn || a==nuptune || a==uranus)
+    printf("far from earth");
+
+    return 0;
+}
