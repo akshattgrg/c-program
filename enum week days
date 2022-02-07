@@ -1,0 +1,40 @@
+#include <stdio.h>
+enum weeks{
+    monday=1,
+    tuesday,
+    wednesday,
+    thursday,
+    friday,
+    saturday,
+    sunday,
+};
+int main()
+{
+    int a;
+    printf("enter the day of weak: ");
+    scanf("%d",&a);
+    if(a==monday)
+    {
+        printf("mondays are bad.");
+    }
+    else if(a==tuesday||a==wednesday||a==thursday)
+    {
+        printf("meedweek days are so-so.");
+        
+    }
+    else if(a==friday)
+    {
+        printf("Fridays are better.");
+        
+    }
+    else if(a==saturday||a==sunday)
+    {
+        printf("weekends are best");
+    }
+    else
+    {
+        printf("enter the validay day");
+    }
+
+    return 0;
+}
